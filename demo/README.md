@@ -92,22 +92,56 @@ Depois de lançar todos os componentes, tal como descrito acima, já temos o que
 Nesta secção vamos correr os comandos necessários para testar todas as operações do sistema.
 Cada subsecção é respetiva a cada operação presente no *hub*.
 
-### 2.1. *balance*
+Consultar o saldo de *bicloins*:
 
-TODO
+    > balance
+    alice 0 BIC
 
-(mostrar casos normais e casos de erro)
+Carregar 15 Euros em *bicloins*:
 
-### 2.2 *top-up*
+    > top-up 15
+    alice 150 BIC
 
-TODO
+Criar uma etiqueta para coordenadas e depois usar a etiqueta para movimentações:
 
-(idem)
+    > tag 38.7376 -9.3031 loc1
+    OK
+    > move loc1
+    alice em https://www.google.com/maps/place/38.7376,-9.3031
 
-### 2... TODO
+Apresentar a localização atual do utilizador:
 
-(idem)
+    > at
+    alice em https://www.google.com/maps/place/38.7376,-9.3031
 
+Listar as *n* estações mais próximas (*n*=3 no exemplo seguinte):
+
+    > scan 3
+    istt, lat 38.7372, -9.3023 long, 20 docas, 4 BIC prémio, 12 bicicletas, a 82 metros
+    stao, lat 38.6867, -9.3124 long, 30 docas, 3 BIC prémio, 20 bicicletas, a 5717 metros
+    jero, lat 38.6972, -9.2064 long, 30 docas, 3 BIC prémio, 20 bicicletas, a 9517 metros
+
+As estações aparecem listadas, uma por linha, com os seguintes atributos (separados por vírgula e espaço):
+identificador, coordenadas, capacidade, prémio, número de bicicletas disponíveis, e distância para a posição do utilizador.
+
+Listar informação de uma estação:
+
+    > info istt
+    IST Taguspark, lat 38.7372, -9.3023 long, 20 docas, 4 BIC prémio, 12 bicicletas, 22 levantamentos, 7 devoluções, https://www.google.com/maps/place/38.7372,-9.3023
+
+Levantar bicicleta da estação indicada e pedalar para outra posição:
+
+    > bike-up istt
+    OK
+    > move 38.6867 -9.3117
+    alice em https://www.google.com/maps/place/38.6867,-9.3117
+
+Devolver a bicicleta (é necessário estar próximo da estação):
+
+    > bike-down istt
+    ERRO fora de alcance
+    > bike-down stao
+    OK
 ----
 
 ## 3. Considerações Finais
