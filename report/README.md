@@ -12,4 +12,4 @@ Sistemas Distribuídos 2020-2021, segundo semestre
 | 93751  | Ricardo Fonseca   | <https://git.rnl.tecnico.ulisboa.pt/ist1...> | <mailto:ricardosousa2000@tecnico.ulisboa.pt>   |
 | 90780  | Tomás Nunes       | <https://git.rnl.tecnico.ulisboa.pt/ist1...> | <mailto:tomas.santos.nunes@tecnico.ulisboa.pt> |
 
-![André](andre.jpg) ![Ricardo](ricardo.jpg) ![Tomás](tomas.jpg)
+![André](andree.jpg) ![Ricardo](ricardo.jpg) ![Tomás](tomas.jpg)
