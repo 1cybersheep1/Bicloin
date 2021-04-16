@@ -83,7 +83,7 @@ $ app localhost 2181 alice +35191102030 38.7380 -9.3000
 
 **Nota:** Para poder correr o script *app* diretamente é necessário fazer `mvn install` e adicionar ao *PATH* ou utilizar diretamente os executáveis gerados na pasta `target/appassembler/bin/`.
 
-Abrir outra consola, e iniciar a aplicação com o utilizador bruno.
+Abrir outra consola, e iniciar a aplicação com o utilizador alice.
 
 Depois de lançar todos os componentes, tal como descrito acima, já temos o que é necessário para usar o sistema através dos comandos.
 
