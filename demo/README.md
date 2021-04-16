@@ -31,7 +31,7 @@ $ mvn compile exec:java
 
 Este comando vai colocar o *rec* no endereço *localhost* e na porta *8091*.
 
-Para confirmar o funcionamento do servidor com um *ping*, fazer:
+Para confirmar o funcionamento do servidor, fazer:
 
 ```sh
 $ cd rec-tester
@@ -49,7 +49,29 @@ Todos os testes devem ser executados sem erros.
 
 ### 1.4. Lançar e testar o *hub*
 
-TODO
+Para proceder aos testes, é preciso em primeiro lugar lançar o servidor *rec* como descrito anteriormente seguido de um *hub* .
+Para isso basta ir à pasta *hub* e executar:
+
+```sh
+$ mvn compile exec:java
+```
+
+Este comando vai colocar o *rec* no endereço *localhost* e na porta *8091*.
+
+Para confirmar o funcionamento do servidor, fazer:
+
+```sh
+$ cd hub-tester
+$ mvn compile exec:java
+```
+
+Para executar toda a bateria de testes de integração, fazer:
+
+```sh
+$ mvn verify
+```
+
+Todos os testes devem ser executados sem erros.
 
 ### 1.5. *App*
 
