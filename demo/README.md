@@ -1,7 +1,5 @@
 # Guião de Demonstração
 
-(incompleto -- **compete ao grupo completar o guião** -- ver TODOs)
-
 ## 1. Preparação do sistema
 
 Para testar o sistema e todos os seus componentes, é necessário preparar um ambiente com dados para proceder à verificação dos testes.
